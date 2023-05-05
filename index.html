@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Module Test</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+        *{
+            padding: 0%;
+            margin: 0;
+        }
+
+body{
+    background-color: #D9D9D9;    
+}
+
+thead{
+    font-weight: 600;
+}
+table{
+    width: 100%;
+    margin-top: 40px;
+    
+}
+
+
+table, thead,th,  td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+}
+.icon{
+    font-size: 18px;
+}
+.sortButton{
+    /* margin-top: 30px; */
+   color: white;
+   background-color: black;
+    padding: 20px;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 50px;
+    font-size: 18px;
+}
+nav{
+    display: flex;
+    gap: 10px;
+    justify-content:space-between;
+}
+.search{
+width: 100%;
+padding: 10px;
+height: 25px;
+}
+
+.sort{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.top{
+    background-color: black;
+    padding: 15px;
+    color: white;
+    margin-bottom: 20px;
+}
+section{
+    padding: 0px 40px;
+}
+    </style>
+</head>
+<body>
+    <div class="top">
+        <h2>
+            Student Portal
+        </h2>
+
+    </div>
+    <section id="section">
+        <nav>
+            <input class="search" type="text" placeholder="Search" id="search">
+            <button class="sortButton" id="btn">Search</button>
+        </nav>
+        <div class="sort ">
+            <button id="AtoZ"  class="sortButton">Sort A<span class="material-icons icon">arrow_forward</span>Z</button>
+            <button id="ZtoA" class="sortButton">Sort Z<span class="material-icons icon">arrow_forward</span>A</button>
+            <button id="Marks" class="sortButton">Sort By Marks</button>
+            <button id="Passing" class="sortButton">Sort By Passing</button>
+            <button id="Class" class="sortButton">Sort By Class</button>
+            <button id="Gender" class="sortButton">Sort By Gender</button>
+           
+        </div>
+        <table id="table">
+            <thead >
+                <td >ID</td>
+                <td>Name</td>
+                <td>Gender</td>
+                <td>Class</td>
+                <td>Marks</td>
+                <td>Pssing</td>
+                <td>Email</td>
+            </thead>
+             <!-- <tr>
+                <td>1</td>
+                <td>Niki</td>
+                <td>Male</td>
+                <td>Btech</td>
+                <td>998</td>
+                <td>2022</td>
+                <td>nickhil@gmail.com</td>
+            </tr> -->
+        </table>
+    </section>
+    <script src="script.js"></script>
+    <script src="gender.js"></script>
+</body>
+</html>
